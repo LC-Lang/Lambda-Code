@@ -1,8 +1,8 @@
 <div align=center>
 <img width=500 src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/wordmark-logo-transparent.png">
 
-# Swirl programming language
-A high level, statically typed, object-oriented programming language.
+# Swirl Programming Language
+A high level, statically typed, compiled programming language.
 
 [Website](https://swirl-lang.vercel.app) |
 [Docs](https://swirl-lang.vercel.app/docs) |
@@ -12,18 +12,14 @@ A high level, statically typed, object-oriented programming language.
 [![License](https://img.shields.io/github/license/SwirlLang/Swirl?style=flat-square)](LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/SwirlLang/Swirl/cmake.yml?style=flat-square)](https://github.com/SwirlLang/Swirl/actions/workflows/cmake.yml)
 [![Discord](https://img.shields.io/discord/894989427628179477?color=blue&label=Discord&logo=Discord&logoColor=white&style=flat-square)](https://discord.gg/RSJ5TUDdqx)
-</div>  
 
-Welcome to Swirl, a feature-rich programming language that is easy to learn and use, making it a great choice for beginners and experienced programmers alike. With a clean and concise syntax, Swirl allows you to write code that is easy to read and understand. Additionally, Swirl is designed for efficiency, ensuring that your apps run smoothly and perform well across all platforms.
+</div>
+<div align="center">
+The ambition of Swirl is to be a modern programming language combining and its own ideas and the best features and practices 
+ of beloved programming languages in a unique way.
+</div>
 
-
-Some of the key features of Swirl include: 
-* Intuitive, easy-to-learn syntax
-* Statically typed for improved type safety and performance
-* Rich standard library useful for a wide range of tasks
-* Support for object-oriented programming
-* Cross-platform compatibility
-* Advanced package management system for accessing a wide range of libraries and frameworks
+To get a general idea, take a look at the [scaffold](https://github.com/SwirlLang/Swirl/blob/main/scaffold.md).
 
 ## Getting Started
 You can find installation instructions in the [docs](https://swirl-lang.vercel.app/docs/getting-started/installation).
