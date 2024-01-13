@@ -23,7 +23,6 @@ std::vector<std::string> lines_rec{};
 
 const std::vector<Argument> application_flags = {
         {{"-h","--help"}, "Show the help message", false, {}},
-        {{"-r", "--run"}, "Run the compiled file", false, {}},
         {{"-o", "--output"}, "Output file name", true, {}},
         {{"-c", "--compiler"}, "C++ compiler to use", true, {}},
         {{"-d", "--debug"}, "Log the steps of compilation", false, {}},
@@ -129,16 +128,8 @@ int main(int argc, const char** const argv) {
         parser.dispatch();
         Transpile(parser.m_AST->chl, cache_dir + SW_OUTPUT + ".cpp", compiled_source);
     }
-
-    if (app.contains_flag("-r")) {
-        std::string cpp_obj = cxx + " " + cache_dir + SW_OUTPUT + ".cpp" + " -o " + out_dir + SW_OUTPUT + " && ";
-        
-        if (out_dir[0] != '/'){
-            cpp_obj += "./" + out_dir + SW_OUTPUT;
-        } else {
-            cpp_obj += out_dir + SW_OUTPUT;
-        }
-        
-        system(cpp_obj.c_str());
-    }
+ 
+    std::string compile_cmd = cxx + " " + cache_dir + SW_OUTPUT + ".cpp" + " -o " + out_dir + SW_OUTPUT;
+       
+    system(compile_cmd.c_str());
 }
