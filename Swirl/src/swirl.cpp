@@ -41,37 +41,9 @@ std::unordered_map<std::string, const char*> type_registry = {
         {"function","global"}
 };
 
-
-std::optional<std::unordered_map<std::string, std::string>> compile(
-        std::string& _source,
-        const std::string& _cacheDir,
-        bool symt = false) {
-
-    InputStream chrinp_stream(_source);
-    TokenStream tk(chrinp_stream);
-    preProcess(_source, tk, _cacheDir);
-    Parser parser(tk);
-    return Transpile(
-            parser.m_AST->chl,
-            _cacheDir,
-            compiled_source,
-            true,
-            symt
-            );
-}
-
 int main(int argc, const char** const argv) {
+    
     cli app(argc, argv, application_flags);
-
-// For Debugging purpose
-//    const char *args[] = {
-//            "swirl",
-//            "main.sw",
-//            "-r",
-//            "-d"
-//    };
-//
-//    cli app(4, args, application_flags);
 
     if (app.contains_flag("-h")) {
         std::cout << USAGE << app.generate_help() << '\n';
