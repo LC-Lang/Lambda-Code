@@ -34,7 +34,7 @@ swirl hello.sw && ./hello
 ```
 
 ## Contributing to Swirl
-We welcome contributions to Swirl! If you have an idea for a new feature or have found a bug, please open an issue in the project repository. To contribute code to Swirl, fork the repository, create a new branch, and submit a pull request. Read the [Docs](https://swirl-lang.vercel.app/docs/) for more info.
+We welcome contributions to Swirl! To start contributing to Swirl, fork the repository, create a new branch, make the changes, and submit a pull request. Read the [Docs](https://swirl-lang.vercel.app/docs/) for more info.
 
 ## Issues and feature request
 
