@@ -51,11 +51,6 @@ std::optional<std::string> cli::get_file() {
 }
 
 std::vector<Argument> cli::parse() {
-	if (m_argc <= 1) { 
-		std::cout << USAGE << generate_help() << '\n';
-		exit(0); 
-	}
-
 	std::vector<std::string_view> args(m_argv, m_argv + m_argc);
 	std::vector<Argument> supplied;
 

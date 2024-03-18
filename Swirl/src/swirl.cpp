@@ -61,7 +61,11 @@ int main(int argc, const char** const argv) {
     else cxx = "g++";
 
     std::optional<std::string> _file = app.get_file();
-    if (!_file.has_value()) { std::cerr << "No Input file\n"; return 1; }
+
+    if (!_file.has_value()) { 
+        std::cerr << "No Input file\n"; return 1; 
+    }
+    
     SW_FED_FILE_PATH = *app.get_file();
 
     if (!std::filesystem::exists(SW_FED_FILE_PATH)) {
